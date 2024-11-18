@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/css/styleLogin.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <title>Login</title>
+</head>
+<body>
+
+<div class="card">
+    <aside id="header">
+        <section class="profile">
+            <nav class="navbar navbar-expand-lg navbar-light" tabindex="0" role="navigation"
+                 aria-label="side-navigation">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+    </aside>
+
+    <h1 class="text-center">ChatBot</h1>
+    <p class="text-center">Entre para salvar seus Animes, Mangas e Doramas</p>
+    <form method="POST" action="/login">
+        <div class="mb-3">
+            <input type="text" placeholder="Login" id="login" name="email" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <div class="input-group">
+                <input min="1" type="password" placeholder="Senha" maxlength="60" id="password" name="senha"
+                       class="form-control" aria-describedby="passwordToggle">
+                <button class="btn btn-outline-secondary" type="button" id="passwordToggle">
+                    <i class="bi bi-eye-slash" id="passwordIcon"></i>
+                </button>
+            </div>
+        </div>
+        <div class="d-flex justify-content-end mb-3">
+            <button type="submit" class="btn btn-primary">Entrar</button>
+        </div>
+        <div class="link-container">
+            <div class="mb-3">
+                <a href="/cadastro">Não possui conta? Cadastre-se aqui</a>
+            </div>
+        </div>
+    </form>
+</div>
+<script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../static/js/olhoSenha.js"></script>
+</body>
+</html>

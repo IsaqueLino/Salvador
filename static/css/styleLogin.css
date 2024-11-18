@@ -1,0 +1,91 @@
+html, body{
+    width: 100%
+    height: 100%
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.card {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    margin: 20px auto;
+}
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 300;
+    background: #021124;
+    overflow-y: auto;
+    width: 100%;
+    transition: all ease-in-out 0.5s;
+    padding: 0 15px;
+    z-index: 9997;
+    background: #333;
+    height: 60px;
+}
+form {
+  width: 100%;
+  padding: 20px;
+}
+
+.mb-3 {
+  margin-bottom: 1.5rem !important;
+}
+.btn.btn-primary {
+  background-color: #333;
+  height: 35px; /* Ajustamos a altura do botão */
+  display: flex;
+  align-items: center;
+  border: 0px;
+  padding: 10px 20px; /* Ajustamos o padding do botão */
+}
+
+
+.nav-link{
+    color: #999;
+}
+.nav-link:hover{
+    color: #00ff00;
+    cursor: pointer;
+}
+.btn.btn-primary{
+     background-color: #333;
+     height: 25px;
+     display: flex;
+     align-items: center;
+     border: 0px;
+}
+.btn.btn-primary:hover{
+     color: #00ff00;
+     cursor: pointer;
+}
+.link-container {
+    font-size: 12px;
+    text-align: left;
+    margin-left: 10px;
+}
+.link-container a {
+    text-decoration: none;
+    color: #007bff;
+}
+.link-container a:hover {
+    text-decoration: none;
+    color: #00ff00;
+    cursor: pointer;
+}
+
+/* Média query para telas menores que 768px */
+@media (max-width: 768px) {
+  /* Estilos para telas menores que 768px */
+}
+
+/* Média query para telas menores que 480px */
+@media (max-width: 480px) {
+  /* Estilos para telas menores que 480px */
+}

@@ -1,0 +1,1 @@
+web: gunicorn -b :3000 Principal:app

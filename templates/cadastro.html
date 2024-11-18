@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/bootstrap/css/bootstrap.css">
+    <link rel="icon" type="image/png" href="../static/imagens/iconeSite.png">
+    <link rel="stylesheet" href="../static/css/styleLogin.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <title>Cadastro de usuário</title>
+</head>
+<body class="bg-light">
+
+<div class="card">
+    <aside id="header">
+        <section class="profile">
+            <nav class="navbar navbar-expand-lg navbar-light" tabindex="0" role="navigation"
+                 aria-label="side-navigation">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+    </aside>
+
+    <h1 class="text-center">Cadastro</h1>
+    <form method="POST" action="/cadastro">
+        <div class="mb-3">
+            <label for="nome">Nome:</label>
+            <input type="text" placeholder="Ex. Osvaldo da Cruz Palmito" id="nome" name="nome" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="email">Email:</label>
+            <input type="text" placeholder="ex. Osvaldo32@gmail.com" id="email" name="email" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="password">Senha:</label>
+            <div class="input-group">
+                <input min="1" type="password" placeholder="Pelo menos de 8 caracteres" maxlength="60" id="password" name="senha"
+                       class="form-control" aria-describedby="passwordToggle">
+                <button class="btn btn-outline-secondary" type="button" id="passwordToggle">
+                    <i class="bi bi-eye-slash" id="passwordIcon"></i>
+                </button>
+            </div>
+
+        </div>
+        <div class="d-flex justify-content-end mb-3">
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </div>
+    </form>
+</div>
+<script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../static/js/olhoSenha.js"></script>
+</body>
+</html>
